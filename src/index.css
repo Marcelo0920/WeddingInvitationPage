@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y base del body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Estilo de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Listas sin padding ni margen */
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Campos de formulario */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+}
+
+/* Espaciado en encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+/* Estilo general de párrafos */
+p {
+  margin: 0.5em 0;
+}
+
+.texto-ligero {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300;
+}
+.texto-normal {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+}
+
+.texto-negrita {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+}
+
+.texto-ligero-sombreado {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.texto-normal-sombreado {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.texto-negrita-sombreado {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.highlighted-text {
+  font-family: "Allura", cursive;
+  font-size: 45px;
+}

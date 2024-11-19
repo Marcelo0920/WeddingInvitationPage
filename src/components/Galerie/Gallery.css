@@ -1,0 +1,69 @@
+.gallery-container {
+  width: 100vw;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title {
+  color: #2f5233;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-scattered {
+  position: relative;
+  width: 100%;
+  height: 850px;
+  margin-bottom: 40px;
+}
+
+.polaroid {
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.polaroid:hover {
+  z-index: 10;
+  transform: scale(1.05) rotate(var(--rotation)) !important;
+}
+
+.gallery-quote {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-quote-source {
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+/* Entrance animation for polaroids */
+@keyframes fadeInScatter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) rotate(var(--rotation));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--rotation));
+  }
+}
+
+.polaroid {
+  animation: fadeInScatter 0.8s ease-out forwards;
+  animation-delay: calc(var(--index) * 0.1s);
+}

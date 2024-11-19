@@ -1,0 +1,111 @@
+.welcome_intro {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: grid;
+  overflow-x: hidden;
+  grid-template-rows: 20% 50% 30%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centrado de elementos en welcome_words */
+.welcome_words {
+  margin-top: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 1rem;
+  color: white;
+}
+
+.nombre-floreal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: auto;
+
+  z-index: 2;
+}
+/* Estilos básicos para el texto */
+.welcome_words h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.welcome_words h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome_words p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.invitation_btn_zone {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 100vw;
+  margin-top: 80px;
+}
+
+.invitation_btn_zone img {
+  width: 35%;
+  margin: -10px;
+}
+
+.invitation_btn {
+  background-color: #325338;
+  width: 200px;
+  height: 70px;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 10px;
+}
+
+.invitation_btn img {
+  width: 25%;
+}
+
+.invitation_btn p {
+  margin: 7px;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  z-index: -2;
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0px 200px 55px #325338;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
