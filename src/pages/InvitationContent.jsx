@@ -10,6 +10,11 @@ import DinnerTable from "../assets/dinnertable.png";
 import WeddingMap from "../components/WeddingMap/WeddingMap";
 import OurStory from "../components/OurHistory/OurHistory";
 import Gallery from "../components/Galerie/Gallery";
+import DressingCode from "../components/DressingCode/DressingCode";
+import NoKids from "../components/NoKids/NoKids";
+import BestGift from "../components/BestGift/BestGift";
+import ConfirmAttendance from "../components/ConfirmAttendance/ConfirmAttendance";
+import FooterSection from "../components/Footer/FooterSection";
 
 const InvitationContent = () => {
   return (
@@ -38,6 +43,11 @@ const InvitationContent = () => {
         <WeddingMap />
         <OurStory />
         <Gallery />
+        <DressingCode />
+        <NoKids />
+        <BestGift />
+        <ConfirmAttendance />
+        <FooterSection />
       </div>
     </div>
   );

@@ -1,0 +1,118 @@
+/* Base styles for mobile first (357x800) */
+.clothing-container {
+  padding: 24px;
+  max-width: 357px;
+  font-family: "Comfortaa", sans-serif;
+  margin: 0 auto;
+}
+
+.clothing-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #166534; /* emerald-800 */
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.clothing-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.clothing-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.clothing-image-container {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.clothing-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.clothing-content {
+  flex: 1;
+}
+
+.clothing-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #166534; /* emerald-800 */
+  margin-bottom: 8px;
+}
+
+.clothing-description {
+  font-size: 14px;
+  color: #4b5563; /* gray-600 */
+  line-height: 1.5;
+}
+
+/* Media Queries for different mobile sizes */
+@media screen and (min-width: 375px) {
+  .clothing-container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .clothing-container {
+    max-width: 390px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .clothing-container {
+    max-width: 414px;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .clothing-container {
+    max-width: 428px;
+    padding: 32px;
+  }
+
+  .clothing-title {
+    font-size: 32px;
+  }
+
+  .clothing-image-container {
+    width: 104px;
+    height: 104px;
+  }
+
+  .clothing-image {
+    width: 88px;
+    height: 88px;
+  }
+}
+
+/* For tablets and larger phones */
+@media screen and (min-width: 640px) {
+  .clothing-container {
+    max-width: 640px;
+  }
+
+  .clothing-sections {
+    gap: 40px;
+  }
+
+  .clothing-subtitle {
+    font-size: 22px;
+  }
+
+  .clothing-description {
+    font-size: 16px;
+  }
+}

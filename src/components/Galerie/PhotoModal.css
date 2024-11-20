@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.6s ease;
   perspective: 1000px;
 }
 
@@ -23,13 +23,13 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   position: fixed;
   cursor: grab;
-  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
   transform-origin: center center;
   backface-visibility: hidden;
 }
 
 .modal-polaroid.picking-up {
-  animation: pickUpRealistic 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation: pickUpRealistic 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 .modal-polaroid.putting-down {

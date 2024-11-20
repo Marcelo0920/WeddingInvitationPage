@@ -1,0 +1,168 @@
+/* Base styles for mobile first (357x800) */
+.gift-container {
+  padding: 24px;
+  max-width: 357px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.gift-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #166534; /* emerald-800 */
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.gift-highlight {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #64748b; /* slate-500 */
+  font-style: italic;
+  margin-bottom: 24px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Allura", cursive;
+}
+
+.gift-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8; /* slate-400 */
+  margin-bottom: 32px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.gift-button {
+  background-color: #627d6c; /* sage green */
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 48px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gift-button:hover {
+  background-color: #4f6357;
+}
+
+/* Media Queries for different mobile sizes */
+@media screen and (min-width: 375px) {
+  .gift-container {
+    max-width: 375px;
+  }
+
+  .gift-highlight,
+  .gift-description {
+    max-width: 335px;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .gift-container {
+    max-width: 390px;
+  }
+
+  .gift-highlight,
+  .gift-description {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .gift-container {
+    max-width: 414px;
+  }
+
+  .gift-highlight,
+  .gift-description {
+    max-width: 374px;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .gift-container {
+    max-width: 428px;
+    padding: 32px;
+  }
+
+  .gift-title {
+    font-size: 26px;
+    margin-bottom: 28px;
+  }
+
+  .gift-highlight {
+    font-size: 18px;
+  }
+
+  .gift-description {
+    font-size: 14px;
+  }
+
+  .gift-button {
+    padding: 14px 45px;
+    font-size: 15px;
+  }
+
+  .arrow-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* For tablets and larger phones */
+@media screen and (min-width: 640px) {
+  .gift-container {
+    max-width: 640px;
+    padding: 40px;
+  }
+
+  .gift-title {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+
+  .gift-highlight {
+    font-size: 20px;
+    max-width: 480px;
+  }
+
+  .gift-description {
+    font-size: 16px;
+    max-width: 480px;
+    margin-bottom: 40px;
+  }
+
+  .gift-button {
+    padding: 16px 54px;
+    font-size: 16px;
+  }
+
+  .arrow-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .button-container {
+    gap: 24px;
+  }
+}
