@@ -8,7 +8,7 @@
 }
 
 .gift-title {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 600;
   color: #166534; /* emerald-800 */
   margin-bottom: 24px;
@@ -16,7 +16,7 @@
 }
 
 .gift-highlight {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.6;
   color: #64748b; /* slate-500 */
   font-style: italic;
@@ -28,7 +28,7 @@
 }
 
 .gift-description {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
   color: #94a3b8; /* slate-400 */
   margin-bottom: 32px;
@@ -56,7 +56,7 @@
   border: none;
   border-radius: 24px;
   padding: 12px 48px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -66,52 +66,13 @@
 }
 
 /* Media Queries for different mobile sizes */
-@media screen and (min-width: 375px) {
-  .gift-container {
-    max-width: 375px;
-  }
-
-  .gift-highlight,
-  .gift-description {
-    max-width: 335px;
-  }
-}
-
-@media screen and (min-width: 390px) {
-  .gift-container {
-    max-width: 390px;
-  }
-
-  .gift-highlight,
-  .gift-description {
-    max-width: 350px;
-  }
-}
-
-@media screen and (min-width: 414px) {
-  .gift-container {
-    max-width: 414px;
-  }
-
-  .gift-highlight,
-  .gift-description {
-    max-width: 374px;
-  }
-}
-
-@media screen and (min-width: 428px) {
-  .gift-container {
-    max-width: 428px;
-    padding: 32px;
-  }
-
+@media screen and (min-width: 481px) {
   .gift-title {
-    font-size: 26px;
-    margin-bottom: 28px;
+    font-size: 30px;
   }
 
   .gift-highlight {
-    font-size: 18px;
+    font-size: 30px;
   }
 
   .gift-description {
@@ -119,50 +80,39 @@
   }
 
   .gift-button {
-    padding: 14px 45px;
-    font-size: 15px;
-  }
-
-  .arrow-icon {
-    width: 28px;
-    height: 28px;
+    font-size: 18px;
   }
 }
 
-/* For tablets and larger phones */
-@media screen and (min-width: 640px) {
-  .gift-container {
-    max-width: 640px;
-    padding: 40px;
+@media screen and (min-width: 768px) {
+  .gift-title {
+    font-size: 40px;
   }
 
-  .gift-title {
-    font-size: 26px;
-    margin-bottom: 32px;
+  .gift-container {
+    max-width: 600px;
   }
 
   .gift-highlight {
-    font-size: 20px;
-    max-width: 480px;
+    font-size: 38px;
+    max-width: 500px;
   }
 
   .gift-description {
-    font-size: 16px;
-    max-width: 480px;
-    margin-bottom: 40px;
+    font-size: 18px;
+    max-width: 500px;
   }
 
   .gift-button {
-    padding: 16px 54px;
-    font-size: 16px;
+    font-size: 25px;
   }
 
   .arrow-icon {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
 
   .button-container {
-    gap: 24px;
+    margin-top: 70px;
   }
 }

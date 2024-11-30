@@ -20,6 +20,8 @@
 .modal-polaroid {
   background: white;
   padding: 20px 20px 40px 20px;
+  width: 280px;
+  max-height: 400px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   position: fixed;
   cursor: grab;
@@ -42,8 +44,9 @@
 }
 
 .modal-polaroid__image {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
   object-fit: cover;
   margin-bottom: 16px;
 }
@@ -93,4 +96,15 @@
 
 .modal-polaroid:active {
   cursor: grabbing;
+}
+
+@media screen and (min-width: 481px) {
+  .modal-polaroid {
+    max-height: 600px;
+    width: 350px;
+  }
+
+  .modal-polaroid__image {
+    max-height: 500px;
+  }
 }

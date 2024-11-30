@@ -10,38 +10,40 @@ const MeetCard = () => {
   return (
     <div className="background">
       <div className="container">
-        <h1 className="title">Conoce a la Pareja</h1>
+        <h1 className="title-meet">Conoce a la Pareja</h1>
 
         <p className="subtitle">
           Gloria a Dios quien ha creado a las criaturas en parejas. Por favor,
           aceptanos y bendicenos Dios.
         </p>
 
-        <div className="profile">
-          <div className="profile__image-wrapper">
-            <img src={pabloMeet} alt="Profile 1" className="profile__image" />
+        <div className="profile_wrapper">
+          <div className="profile">
+            <div className="profile__image-wrapper">
+              <img src={pabloMeet} alt="Profile 1" className="profile__image" />
+            </div>
+            <h2 className="profile__name ">Pablo Vargas Avila</h2>
+            <p className="profile__label">Hijo de</p>
+            <p className="profile__parents">Sr. Mateo & Sra. Yvonne</p>
+            <div className="social-icons">
+              <FaInstagram className="social-icons__icon" />
+              <FaTwitter className="social-icons__icon" />
+              <FaFacebook className="social-icons__icon" />
+            </div>
           </div>
-          <h2 className="profile__name ">Pablo Vargas Avila</h2>
-          <p className="profile__label">Hijo de</p>
-          <p className="profile__parents">Sr. Mateo & Sra. Yvonne</p>
-          <div className="social-icons">
-            <FaInstagram className="social-icons__icon" />
-            <FaTwitter className="social-icons__icon" />
-            <FaFacebook className="social-icons__icon" />
-          </div>
-        </div>
 
-        <div className="profile">
-          <div className="profile__image-wrapper">
-            <img src={angieMeet} alt="Profile 2" className="profile__image" />
-          </div>
-          <h2 className="profile__name">Maria de los Angeles</h2>
-          <p className="profile__label">Hija de</p>
-          <p className="profile__parents">Sr. Angeles & Sra. Maria</p>
-          <div className="social-icons">
-            <FaInstagram className="social-icons__icon" />
-            <FaTwitter className="social-icons__icon" />
-            <FaFacebook className="social-icons__icon" />
+          <div className="profile">
+            <div className="profile__image-wrapper">
+              <img src={angieMeet} alt="Profile 2" className="profile__image" />
+            </div>
+            <h2 className="profile__name">Maria de los Angeles</h2>
+            <p className="profile__label">Hija de</p>
+            <p className="profile__parents">Sr. Angeles & Sra. Maria</p>
+            <div className="social-icons">
+              <FaInstagram className="social-icons__icon" />
+              <FaTwitter className="social-icons__icon" />
+              <FaFacebook className="social-icons__icon" />
+            </div>
           </div>
         </div>
 

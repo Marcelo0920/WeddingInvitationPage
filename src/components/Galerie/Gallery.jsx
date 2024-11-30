@@ -25,9 +25,6 @@ const Gallery = () => {
       caption: "Polaroid 600 Format",
       style: {
         "--rotation": "-5deg",
-        position: "absolute",
-        left: "-1%",
-        top: "5px",
       },
     },
     {
@@ -35,9 +32,6 @@ const Gallery = () => {
       caption: "Polaroid SX-70 Format",
       style: {
         "--rotation": "3deg",
-        position: "absolute",
-        left: "33%",
-        top: "20px",
       },
     },
     {
@@ -45,9 +39,6 @@ const Gallery = () => {
       caption: "Fujifilm Instax Mini Format",
       style: {
         "--rotation": "-2deg",
-        position: "absolute",
-        right: "0%",
-        top: "80px",
       },
     },
     {
@@ -55,9 +46,6 @@ const Gallery = () => {
       caption: "Fujifilm Instax Mini Format",
       style: {
         "--rotation": "4deg",
-        position: "absolute",
-        left: "0%",
-        top: "250px",
       },
     },
     {
@@ -65,9 +53,6 @@ const Gallery = () => {
       caption: "Polaroid Image/Spectra Format",
       style: {
         "--rotation": "-3deg",
-        position: "absolute",
-        right: "25%",
-        top: "210px",
       },
     },
     {
@@ -75,9 +60,6 @@ const Gallery = () => {
       caption: "Polaroid 600 Format",
       style: {
         "--rotation": "2deg",
-        position: "absolute",
-        right: "2%",
-        top: "240px",
       },
     },
     {
@@ -85,9 +67,6 @@ const Gallery = () => {
       caption: "Polaroid 600 Format",
       style: {
         "--rotation": "-4deg",
-        position: "absolute",
-        right: "10%",
-        top: "400px",
       },
     },
     {
@@ -95,9 +74,6 @@ const Gallery = () => {
       caption: "Fujifilm Instax Wide Format",
       style: {
         "--rotation": "8deg",
-        position: "absolute",
-        left: "0%",
-        top: "400px",
       },
     },
     {
@@ -105,9 +81,6 @@ const Gallery = () => {
       caption: "Fujifilm Instax Mini Format",
       style: {
         "--rotation": "-2deg",
-        position: "absolute",
-        left: "35%",
-        top: "500px",
       },
     },
     {
@@ -115,9 +88,6 @@ const Gallery = () => {
       caption: "Polaroid Image/Spectra Format",
       style: {
         "--rotation": "4deg",
-        position: "absolute",
-        right: "0%",
-        top: "580px",
       },
     },
     {
@@ -125,9 +95,6 @@ const Gallery = () => {
       caption: "Polaroid 600 Format",
       style: {
         "--rotation": "-3deg",
-        position: "absolute",
-        left: "5%",
-        top: "580px",
       },
     },
     {
@@ -135,9 +102,6 @@ const Gallery = () => {
       caption: "Fujifilm Instax Mini Format",
       style: {
         "--rotation": "2deg",
-        position: "absolute",
-        left: "25%",
-        top: "700px",
       },
     },
   ];
@@ -163,17 +127,19 @@ const Gallery = () => {
 
       <div className="gallery-scattered">
         {photos.map((photo, index) => (
-          <PolaroidImage
-            key={index}
-            image={photo.image}
-            caption={photo.caption}
-            style={{
-              ...photo.style,
-              "--index": index,
-              cursor: "pointer",
-            }}
-            onClick={(e) => handlePhotoClick(photo, e)}
-          />
+          <div className="photo-wrapper" key={index}>
+            <PolaroidImage
+              key={index}
+              image={photo.image}
+              caption={photo.caption}
+              style={{
+                ...photo.style,
+                "--index": index,
+                cursor: "pointer",
+              }}
+              onClick={(e) => handlePhotoClick(photo, e)}
+            />
+          </div>
         ))}
       </div>
 

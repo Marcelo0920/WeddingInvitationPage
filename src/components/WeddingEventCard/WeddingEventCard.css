@@ -1,12 +1,14 @@
 .event-card {
   width: 90vw;
-  height: 600px;
+  height: 440px;
   margin: 0 auto;
   border-radius: 16px;
   position: relative;
   background-size: cover;
   background-position: center;
   overflow: hidden;
+
+  font-family: "Comfortaa", sans-serif;
 }
 
 .event-card__overlay {
@@ -31,18 +33,14 @@
 .event-card__content {
   text-align: center;
   width: 100%;
-  max-width: 300px;
 }
 
 .event-card__icon {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .event-card__title {
-  font-size: 30px;
-  font-family: "Comfortaa", sans-serif;
-  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 .event-card__divider {
@@ -55,17 +53,15 @@
 .event-card__time {
   font-size: 18px;
   margin-bottom: 20px;
-  font-family: "Comfortaa", sans-serif;
 }
 
 .event-card__location {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 15px;
-  font-family: "Comfortaa", sans-serif;
 }
 
 .event-card__address {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.6;
   margin-bottom: 30px;
   padding: 0 20px;
@@ -77,7 +73,7 @@
   border: none;
   border-radius: 25px;
   padding: 12px 30px;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -93,4 +89,49 @@
 .event-card__icon {
   width: 65px;
   height: 65px;
+}
+
+@media screen and (min-width: 481px) {
+  .event-card {
+    height: 600px;
+  }
+
+  .event-card__title {
+    font-size: 34px;
+  }
+
+  .event-card__location {
+    font-size: 24px;
+  }
+
+  .event-card__address {
+    font-size: 15px;
+  }
+
+  .event-card__map-button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .event-card__title {
+    font-size: 42px;
+  }
+
+  .event-card__location {
+    font-size: 29px;
+  }
+
+  .event-card__address {
+    font-size: 19px;
+  }
+
+  .event-card__map-button {
+    font-size: 26px;
+  }
+
+  .event-card__icon {
+    width: 85px;
+    height: 85px;
+  }
 }

@@ -19,15 +19,26 @@
 }
 
 .polaroid__image {
-  width: 90px; /* Reduced from 130px */
-  height: 90px; /* Reduced from 130px */
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   margin-bottom: 6px;
 }
 
 .polaroid__caption {
   text-align: center;
-  font-size: 10px; /* Reduced from 12px */
+  font-size: 10px;
   color: #666;
   font-family: "Quicksand", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .polaroid__image {
+    width: 170px;
+    height: 170px;
+  }
+
+  .polaroid__caption {
+    font-size: 15px;
+  }
 }

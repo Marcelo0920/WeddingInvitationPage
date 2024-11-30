@@ -2,25 +2,24 @@
   width: 90vw;
   margin: 0 auto;
   z-index: 10;
-
   min-height: 800px;
   background-color: white;
   border-radius: 25px;
   padding: 24px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .background {
   background-color: rgb(242, 247, 224);
 }
 
-.title {
+.title-meet {
   color: #2f5233;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
   margin-bottom: 8px;
   text-align: center;
@@ -28,7 +27,7 @@
 
 .subtitle {
   color: #666;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   margin-bottom: 32px;
   padding: 0 16px;
@@ -98,7 +97,7 @@
   border: none;
   border-radius: 6px;
   padding: 8px 24px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -107,5 +106,70 @@
   background-color: #234026;
 }
 
-/* Optional: Add this if you want to use the Satisfy font for names */
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@media screen and (min-width: 481px) {
+  .title-meet {
+    font-size: 30px;
+  }
+
+  .history-button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .title-meet {
+    font-size: 40px;
+  }
+
+  .history-button {
+    font-size: 25px;
+  }
+
+  .container {
+    min-height: 900px;
+  }
+
+  .profile_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .profile {
+    width: auto;
+  }
+
+  .profile:nth-child(1) {
+    margin-right: 15px;
+  }
+
+  .profile:nth-child(2) {
+    margin-left: 15px;
+  }
+
+  .profile__image-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile__name {
+    font-size: 35px;
+  }
+
+  .profile__label {
+    font-size: 18px;
+  }
+
+  .profile__parents {
+    font-size: 18px;
+  }
+
+  .social-icons__icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .history-button {
+    font-size: 27px;
+  }
+}

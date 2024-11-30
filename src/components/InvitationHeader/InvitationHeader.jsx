@@ -10,6 +10,7 @@ const InvitationHeader = () => {
   return (
     <div>
       <div className="invitation_greetigs">
+        <div></div>
         <div className="background-container">
           <img
             src={weddingBack}
@@ -18,7 +19,7 @@ const InvitationHeader = () => {
           />
           <div className="background-overlay"></div>
         </div>
-        <div>
+        <div className="welcome-text">
           <h4 className="texto-negrita-sombreado">Con todo el amor de Dios</h4>
           <p className="texto-ligero-sombreado">
             Que con la bendición de Dios nos ha unido a nosotros en un lazo de
@@ -28,7 +29,7 @@ const InvitationHeader = () => {
         <div className="title-header">
           <h4 className="texto-negrita-sombreado ">LA BODA DE</h4>
           <div className="title-name">
-            <img alt="wings" className="wings" src={invitationWings} />
+            <img alt="wings" className="wings-header" src={invitationWings} />
             <p className="highlighted-text ">Pablo & Angie</p>
           </div>
           <div>

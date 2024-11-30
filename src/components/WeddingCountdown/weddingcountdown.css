@@ -11,7 +11,7 @@
 
 .title {
   color: #2f5233;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 500;
   margin-bottom: 40px;
   font-family: "Comfortaa", sans-serif;
@@ -36,7 +36,7 @@
 
 .message {
   color: #666;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.6;
   margin-bottom: 30px;
   font-family: "Comfortaa", sans-serif;
@@ -44,7 +44,7 @@
 
 .date {
   color: #666;
-  font-size: 28px;
+  font-size: 19px;
   margin-bottom: 40px;
   font-family: "Comfortaa", sans-serif;
 }
@@ -52,7 +52,7 @@
 .countdown {
   display: flex;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .countdown__item {
@@ -65,7 +65,7 @@
 
 .countdown__number {
   color: #2a9d8f;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 8px;
   font-family: "Comfortaa", sans-serif;
@@ -73,7 +73,8 @@
 
 .countdown__label {
   color: #2a9d8f;
-  font-size: 20px;
+  font-size: 19px;
+  font-weight: 700;
   font-family: "Comfortaa", sans-serif;
 }
 
@@ -81,7 +82,7 @@
   background-color: #2f5233;
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 15px 30px;
   font-size: 16px;
   font-family: "Comfortaa", sans-serif;
@@ -93,7 +94,66 @@
   background-color: #234026;
 }
 
-/* Optional: Add smooth animations to countdown numbers */
 .countdown__number {
   transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 481px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .countdown__item {
+    width: 80px;
+  }
+
+  .countdown__number {
+    font-size: 20px;
+  }
+
+  .countdown__label {
+    font-size: 23px;
+  }
+
+  .calendar-button {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .countdown__item {
+    width: 100px;
+  }
+
+  .countdown__number {
+    font-size: 30px;
+  }
+
+  .countdown__label {
+    font-size: 33px;
+  }
+
+  .calendar-button {
+    font-size: 27px;
+  }
+
+  .venue__name {
+    font-size: 45px;
+  }
+
+  .venue__location {
+    font-size: 35px;
+  }
+
+  .message {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 24px;
+  }
 }
