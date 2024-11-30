@@ -108,3 +108,14 @@
     max-height: 500px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .modal-polaroid {
+    max-height: 850px;
+    width: 500px;
+  }
+
+  .modal-polaroid__image {
+    max-height: 750px;
+  }
+}
