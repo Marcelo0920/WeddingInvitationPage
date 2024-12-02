@@ -1,6 +1,6 @@
 .welcome_intro {
-  min-height: 100vh;
-  max-width: 100vw;
+  height: 100vh;
+  width: 100vw;
   display: grid;
   overflow-x: hidden;
   grid-template-rows: 20% 50% 30%;
@@ -14,24 +14,32 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-family: "Comfortaa", sans-serif;
+  width: 85%;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   align-self: center;
   padding: 1rem;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 150);
+}
+
+.welcome_words h1 {
+  font-family: "Allura", cursive;
+  font-weight: 300;
 }
 
 .nombre-floreal {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
-  width: 95%;
+  width: 87%;
   height: auto;
 
   z-index: 2;
 }
-/* Estilos básicos para el texto */
 .welcome_words h1 {
   font-size: 2.5rem;
   margin: 1rem 0;
@@ -51,26 +59,22 @@
   display: flex;
   align-items: center;
   text-align: center;
-  max-width: 100vw;
   margin-top: 80px;
+  justify-content: center;
 }
 
 .invitation_btn_zone img {
-  width: 35%;
+  width: 30%;
   margin: -10px;
 }
 
 .invitation_btn {
   background-color: #325338;
-  width: 200px;
-  height: 70px;
+  width: 120px;
+  height: 50px;
   border-radius: 50px;
   color: white;
   padding: 10px 10px;
-}
-
-.invitation_btn img {
-  width: 25%;
 }
 
 .invitation_btn p {
@@ -108,4 +112,64 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.divider img {
+  width: 90%;
+}
+
+@media screen and (min-width: 481px) {
+  .welcome_words h1 {
+    font-size: 60px;
+  }
+
+  .welcome_words p {
+    font-size: 18px;
+  }
+
+  .invitation_btn {
+    width: 180px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .invitation_btn img {
+    width: 55px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .welcome_words h1 {
+    font-size: 95px;
+  }
+
+  .welcome_words p {
+    font-size: 25px;
+  }
+
+  .welcome_words h4 {
+    font-size: 25px;
+  }
+
+  .invitation_btn {
+    width: 220px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .invitation_btn img {
+    width: 75px;
+  }
 }

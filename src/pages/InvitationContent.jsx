@@ -16,12 +16,18 @@ import BestGift from "../components/BestGift/BestGift";
 import ConfirmAttendance from "../components/ConfirmAttendance/ConfirmAttendance";
 import FooterSection from "../components/Footer/FooterSection";
 
+import sectionDivider from "../assets/sectionDivider.svg";
+import sectionFirstDivider from "../assets/sectionFirstDivider.svg";
+
 const InvitationContent = () => {
   return (
     <div>
       <InvitationHeader />
       <div className="background">
         <MeetCard />
+        <div className="divider">
+          <img src={sectionFirstDivider} />
+        </div>
         <WeddingCountdown />
         <WeddingEventCard
           icon={WeddingRingsIcon}
@@ -41,11 +47,31 @@ const InvitationContent = () => {
           backgroundImage={DinnerTable}
         />
         <WeddingMap />
+        <div className="divider">
+          <img src={sectionDivider} />
+        </div>
         <OurStory />
+        <div className="divider">
+          <img src={sectionDivider} />
+        </div>
         <Gallery />
+        <div className="divider">
+          <img src={sectionDivider} />
+        </div>
         <DressingCode />
+        <div className="divider">
+          <img src={sectionDivider} />
+        </div>
         <NoKids />
+        <div className="divider">
+          <img src={sectionDivider} />
+        </div>
         <BestGift />
+
+        <div className="divider">
+          <img src={sectionDivider} />
+        </div>
+
         <ConfirmAttendance />
         <FooterSection />
       </div>

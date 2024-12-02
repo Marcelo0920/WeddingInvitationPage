@@ -82,22 +82,23 @@ p {
 .texto-ligero-sombreado {
   font-family: "Comfortaa", sans-serif;
   font-weight: 300;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 80);
 }
 
 .texto-normal-sombreado {
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 150);
 }
 
 .texto-negrita-sombreado {
   font-family: "Comfortaa", sans-serif;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 80);
 }
 
 .highlighted-text {
   font-family: "Allura", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 80);
   font-size: 45px;
 }
