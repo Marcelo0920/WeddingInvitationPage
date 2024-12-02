@@ -2,20 +2,32 @@ import React, { useState } from "react";
 import PolaroidImage from "./PolaroidImage";
 import "./Gallery.css";
 
-import polaroid1 from "../../assets/gallery1.jpg";
-import polaroid2 from "../../assets/gallery2.jpg";
-import polaroid3 from "../../assets/gallery3.jpg";
-import polaroid4 from "../../assets/gallery4.jpg";
-import polaroid5 from "../../assets/gallery5.jpg";
-import polaroid6 from "../../assets/gallery6.jpg";
-import polaroid7 from "../../assets/gallery7.jpg";
-import polaroid8 from "../../assets/gallery8.jpg";
-import polaroid9 from "../../assets/gallery9.jpg";
-import polaroid10 from "../../assets/gallery10.jpg";
-import polaroid11 from "../../assets/gallery11.jpg";
 import PhotoModal from "./PhotoModal";
 
 const Gallery = () => {
+  const polaroid1 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142208/gallery5_au1knt.jpg";
+  const polaroid2 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142209/gallery4_hnnxxl.jpg";
+  const polaroid3 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142210/gallery3_gkqy4p.jpg";
+  const polaroid4 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142210/gallery2_pxp2vs.jpg";
+  const polaroid5 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142211/gallery1_zw5bfi.jpg";
+  const polaroid6 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142211/gallery7_xaliwt.jpg";
+  const polaroid7 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142213/gallery9_jsvsbp.jpg";
+  const polaroid8 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142214/gallery10_p3orxb.jpg";
+  const polaroid9 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142215/gallery8_npj9by.jpg";
+  const polaroid10 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142217/gallery11_i1ztuf.jpg";
+  const polaroid11 =
+    "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142235/gallery6_rxi7rs.jpg";
+
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [sourceRect, setSourceRect] = useState(null);
 
