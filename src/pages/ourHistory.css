@@ -1,0 +1,47 @@
+.history-title {
+  font-family: "Allura", cursive;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.history-title p {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 20px;
+  color: "#325338";
+}
+
+.history-wings {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.history-photo-wrapper {
+  position: absolute;
+  margin-top: 35px;
+}
+
+.history-photo-wrapper:nth-child(1) {
+  left: 0;
+  right: 170px;
+  margin-inline: auto;
+  width: fit-content;
+}
+.history-photo-wrapper:nth-child(2) {
+  left: 150px;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.history-divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  top: 340px;
+}

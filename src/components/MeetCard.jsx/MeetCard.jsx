@@ -5,6 +5,7 @@ import pabloMeet from "../../assets/pablo_meet1.jpg";
 import angieMeet from "../../assets/angie_meet1.jpg";
 
 import "./meetcard.css";
+import { Link } from "react-router-dom";
 
 const MeetCard = () => {
   return (
@@ -47,7 +48,9 @@ const MeetCard = () => {
           </div>
         </div>
 
-        <button className="history-button">Nuestra Historia</button>
+        <Link to="/ourhistory" className="history-button">
+          Nuestra Historia
+        </Link>
       </div>
     </div>
   );

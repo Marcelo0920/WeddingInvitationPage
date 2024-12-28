@@ -1,0 +1,159 @@
+.modal-overlay-history {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.6s ease;
+  perspective: 1000px;
+}
+.modal-overlay-history.active {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-polaroid-history {
+  padding: 20px 20px 40px 20px;
+  width: 280px;
+  height: 450px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  cursor: grab;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-origin: center center;
+  backface-visibility: hidden;
+}
+
+.modal-polaroid__flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.modal-polaroid-history.flipped .modal-polaroid__flipper {
+  transform: rotateY(180deg);
+}
+
+.modal-polaroid__front,
+.modal-polaroid__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+  padding: 20px 20px 40px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal-polaroid__back {
+  transform: rotateY(180deg);
+  background-color: #f8f8f8;
+}
+
+.modal-polaroid-history.picking-up {
+  animation: pickUpRealistic 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.modal-polaroid-history.putting-down {
+  animation: putDownRealistic 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.modal-polaroid__inner {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-polaroid__image {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.modal-polaroid__caption {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  font-family: "Quicksand", sans-serif;
+}
+
+.modal-polaroid__back-content {
+  padding: 20px;
+  font-size: 16px;
+  color: #444;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pickUpRealistic {
+  0% {
+    transform: translate(var(--startX), var(--startY))
+      rotate(var(--startRotation)) scale(var(--startScale));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  40% {
+    transform: translate(var(--startX), var(--startY))
+      rotate(calc(var(--startRotation) - 5deg)) scale(var(--startScale))
+      translateZ(100px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1) translateZ(0);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes putDownRealistic {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1) translateZ(0);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
+  }
+  60% {
+    transform: translate(var(--startX), var(--startY))
+      rotate(calc(var(--startRotation) + 5deg)) scale(var(--startScale))
+      translateZ(100px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: translate(var(--startX), var(--startY))
+      rotate(var(--startRotation)) scale(var(--startScale));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.modal-polaroid:active {
+  cursor: grabbing;
+}
+
+@media screen and (min-width: 481px) {
+  .modal-polaroid {
+    max-height: 600px;
+    width: 350px;
+  }
+
+  .modal-polaroid__image {
+    max-height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-polaroid {
+    max-height: 850px;
+    width: 500px;
+  }
+
+  .modal-polaroid__image {
+    max-height: 750px;
+  }
+}
