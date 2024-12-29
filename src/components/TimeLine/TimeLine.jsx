@@ -1,8 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PolaroidImage from "../Galerie/PolaroidImage";
 import "./timeLine.css";
 
 const TimeLine = ({ onPhotoClick }) => {
+  const [viewBox, setViewBox] = useState("150 0 300 1350");
+
+  useEffect(() => {
+    const updateViewBox = () => {
+      const width = window.innerWidth;
+
+      if (width < 768) {
+        setViewBox("150 0 300 1350"); // Default viewBox
+      } else if (width < 1024) {
+        setViewBox("50 0 480 1350"); // Adjusted for tablet
+      } else if (width <= 1440) {
+        setViewBox("-80 0 800 1350"); // Adjusted for desktop
+      } else {
+        setViewBox("0 0 600 1350"); // Adjusted for large screens
+      }
+    };
+
+    // Initial call
+    updateViewBox();
+
+    // Add event listener
+    window.addEventListener("resize", updateViewBox);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", updateViewBox);
+  }, []);
+
   const LeafGroup = ({ x, y, rotation, scale = 1 }) => (
     <g transform={`translate(${x},${y}) rotate(${rotation}) scale(${scale})`}>
       <g filter="url(#modernShadow)">
@@ -26,7 +53,7 @@ const TimeLine = ({ onPhotoClick }) => {
     {
       year: "2019",
       x: 50,
-      y: 460,
+      y: 440,
       textX: 340,
       textY: 80,
       image:
@@ -42,7 +69,7 @@ const TimeLine = ({ onPhotoClick }) => {
     {
       year: "2020",
       x: 200,
-      y: 750,
+      y: 660,
       textX: 180,
       textY: 320,
       image:
@@ -57,8 +84,8 @@ const TimeLine = ({ onPhotoClick }) => {
     },
     {
       year: "2021",
-      x: 50,
-      y: 950,
+      x: 40,
+      y: 890,
       textX: 360,
       textY: 520,
       image:
@@ -73,8 +100,8 @@ const TimeLine = ({ onPhotoClick }) => {
     },
     {
       year: "2022",
-      x: 200,
-      y: 1270,
+      x: 180,
+      y: 1120,
       textX: 180,
       textY: 720,
       image:
@@ -89,8 +116,8 @@ const TimeLine = ({ onPhotoClick }) => {
     },
     {
       year: "2023",
-      x: 50,
-      y: 1520,
+      x: 20,
+      y: 1350,
       textX: 355,
       textY: 920,
       image:
@@ -105,8 +132,8 @@ const TimeLine = ({ onPhotoClick }) => {
     },
     {
       year: "2024",
-      x: 130,
-      y: 1840,
+      x: 100,
+      y: 1610,
       textX: 330,
       textY: 1145,
       image:
@@ -123,7 +150,7 @@ const TimeLine = ({ onPhotoClick }) => {
 
   return (
     <div className="relative w-full h-screen flex items-center justify-center">
-      <svg viewBox="150 0 300 1350" className="w-full max-w-2xl">
+      <svg viewBox={viewBox} className="w-full max-w-2xl">
         <defs>
           <filter
             id="modernShadow"
@@ -205,14 +232,7 @@ const TimeLine = ({ onPhotoClick }) => {
       <div>
         {timelineData.map(
           ({ year, x, y, image, caption, backContent }, index) => (
-            <div
-              key={year}
-              style={{
-                position: "absolute",
-                left: `${x}px`,
-                top: `${y}px`,
-              }}
-            >
+            <div key={year} className="timeline-item">
               <PolaroidImage
                 image={image}
                 caption={caption}

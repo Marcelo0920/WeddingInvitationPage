@@ -53,3 +53,14 @@
     font-size: 15px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .polaroid__image {
+    width: 120px;
+    height: 140px;
+  }
+
+  .polaroid__caption {
+    font-size: 12px;
+  }
+}

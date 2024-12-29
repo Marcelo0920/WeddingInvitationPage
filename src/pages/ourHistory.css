@@ -17,6 +17,11 @@
   right: 0;
   margin-inline: auto;
   width: fit-content;
+  width: 100%;
+}
+
+.photo-history-header {
+  height: 200px;
 }
 
 .history-photo-wrapper {
@@ -44,4 +49,42 @@
   margin-inline: auto;
   width: fit-content;
   top: 340px;
+}
+
+@media (min-width: 480px) {
+}
+.history-divider img {
+  width: 380px;
+}
+
+@media (min-width: 768px) {
+  .history-title p {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: "#325338";
+  }
+
+  .photo-history-header {
+    height: 400px;
+  }
+  .history-divider {
+    top: 640px;
+  }
+
+  .history-divider img {
+    width: 550px;
+  }
+
+  .history-photo-wrapper {
+    margin-top: 60px;
+  }
+  .history-photo-wrapper:nth-child(1) {
+    left: 0;
+    right: 240px;
+  }
+  .history-photo-wrapper:nth-child(2) {
+    left: 220px;
+    right: 0;
+  }
 }

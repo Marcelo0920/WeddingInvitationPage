@@ -52,7 +52,7 @@ const OurHistory = () => {
   ];
 
   return (
-    <div>
+    <div style={{ maxWidth: "100vw" }}>
       <PhotoHistory
         isOpen={selectedPhoto !== null}
         image={selectedPhoto?.image}
@@ -65,7 +65,7 @@ const OurHistory = () => {
         <img alt="wings" className="history-wings" src={invitationWings} />
         <p className="">Pablo & Angie</p>
       </div>
-      <div style={{ height: "200px" }}>
+      <div className="photo-history-header">
         {photos.map((photo, index) => (
           <div className="history-photo-wrapper" key={index}>
             <PolaroidHistory
