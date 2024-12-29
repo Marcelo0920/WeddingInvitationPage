@@ -17,6 +17,7 @@ const OurHistory = () => {
   const [sourceRect, setSourceRect] = useState(null);
 
   const handlePhotoClick = (photo, event) => {
+    console.log(photo);
     const rect = event.currentTarget.getBoundingClientRect();
     const rotation = getComputedStyle(event.currentTarget).getPropertyValue(
       "--rotation"
@@ -30,6 +31,7 @@ const OurHistory = () => {
       rotation: rotation,
     });
     setSelectedPhoto(photo);
+    console.log(selectedPhoto);
   };
 
   const photos = [
@@ -55,7 +57,7 @@ const OurHistory = () => {
         isOpen={selectedPhoto !== null}
         image={selectedPhoto?.image}
         caption={selectedPhoto?.caption}
-        backContent="Text or content to show on the back"
+        backContent={selectedPhoto?.backContent}
         onClose={() => setSelectedPhoto(null)}
         sourceRect={sourceRect}
       />

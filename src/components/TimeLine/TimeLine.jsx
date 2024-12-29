@@ -32,6 +32,7 @@ const TimeLine = ({ onPhotoClick }) => {
       image:
         "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142208/gallery5_au1knt.jpg",
       caption: "Polaroid 600 Format",
+      backContent: "Este es nuestro viaje a Roma",
       leaves: [
         { x: 280, y: 88, rotation: -30, scale: 1 },
         { x: 300, y: 52, rotation: 20, scale: 0.8 },
@@ -47,6 +48,7 @@ const TimeLine = ({ onPhotoClick }) => {
       image:
         "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142209/gallery4_hnnxxl.jpg",
       caption: "Polaroid SX-70 Format",
+      backContent: "Este es nuestro viaje a Francia",
       leaves: [
         { x: 223, y: 300, rotation: 30, scale: 1 },
         { x: 250, y: 270, rotation: 90, scale: 0.8 },
@@ -62,6 +64,7 @@ const TimeLine = ({ onPhotoClick }) => {
       image:
         "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142209/gallery4_hnnxxl.jpg",
       caption: "Polaroid SX-70 Format",
+      backContent: "Este es nuestro viaje a Holanda",
       leaves: [
         { x: 310, y: 520, rotation: -20, scale: 1 },
         { x: 335, y: 490, rotation: -40, scale: 0.9 },
@@ -77,6 +80,7 @@ const TimeLine = ({ onPhotoClick }) => {
       image:
         "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142209/gallery4_hnnxxl.jpg",
       caption: "Polaroid SX-70 Format",
+      backContent: "Este es nuestro viaje a Alemania",
       leaves: [
         { x: 235, y: 700, rotation: 55, scale: 1 },
         { x: 237, y: 730, rotation: 15, scale: 0.8 },
@@ -92,6 +96,7 @@ const TimeLine = ({ onPhotoClick }) => {
       image:
         "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142209/gallery4_hnnxxl.jpg",
       caption: "Polaroid SX-70 Format",
+      backContent: "Este es nuestro viaje a Suiza",
       leaves: [
         { x: 310, y: 910, rotation: -15, scale: 1 },
         { x: 295, y: 945, rotation: -35, scale: 0.9 },
@@ -107,6 +112,7 @@ const TimeLine = ({ onPhotoClick }) => {
       image:
         "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142209/gallery4_hnnxxl.jpg",
       caption: "Polaroid SX-70 Format",
+      backContent: "Este es nuestro viaje a Bolivia",
       leaves: [
         { x: 260, y: 1170, rotation: 0, scale: 1 },
         { x: 285, y: 1185, rotation: -40, scale: 0.9 },
@@ -151,7 +157,17 @@ const TimeLine = ({ onPhotoClick }) => {
         />
 
         {timelineData.map(
-          ({ year, textX, textY, leaves, x, y, image, caption }) => (
+          ({
+            year,
+            textX,
+            textY,
+            leaves,
+            x,
+            y,
+            image,
+            caption,
+            backContent,
+          }) => (
             <g key={year}>
               {leaves.map((leaf, index) => (
                 <LeafGroup
@@ -187,27 +203,32 @@ const TimeLine = ({ onPhotoClick }) => {
 
       {/* Overlay the PolaroidImages on top of the SVG */}
       <div>
-        {timelineData.map(({ year, x, y, image, caption }, index) => (
-          <div
-            key={year}
-            style={{
-              position: "absolute",
-              left: `${x}px`,
-              top: `${y}px`,
-            }}
-          >
-            <PolaroidImage
-              image={image}
-              caption={caption}
+        {timelineData.map(
+          ({ year, x, y, image, caption, backContent }, index) => (
+            <div
+              key={year}
               style={{
-                "--rotation": "0deg",
-                "--index": index,
-                cursor: "pointer",
+                position: "absolute",
+                left: `${x}px`,
+                top: `${y}px`,
               }}
-              onClick={(e) => onPhotoClick({ image, caption }, e)}
-            />
-          </div>
-        ))}
+            >
+              <PolaroidImage
+                image={image}
+                caption={caption}
+                backContent={backContent}
+                style={{
+                  "--rotation": "0deg",
+                  "--index": index,
+                  cursor: "pointer",
+                }}
+                onClick={(e) =>
+                  onPhotoClick({ image, caption, backContent }, e)
+                }
+              />
+            </div>
+          )
+        )}
       </div>
     </div>
   );
