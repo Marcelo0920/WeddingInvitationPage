@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import invitationWings from "../assets/historyWings.svg";
 import "./ourHistory.css";
 import sectionFirstDivider from "../assets/sectionFirstDivider.svg";
@@ -8,6 +8,10 @@ import PolaroidHistory from "../components/OurHistory/PolaroidHistory";
 import PhotoHistory from "../components/OurHistory/PhotoHistory";
 
 const OurHistory = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const polaroid1 =
     "https://res.cloudinary.com/dvqsabodr/image/upload/v1733142208/gallery5_au1knt.jpg";
   const polaroid2 =
