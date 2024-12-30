@@ -173,3 +173,68 @@
     font-size: 27px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .title-meet {
+    font-size: 27px;
+  }
+
+  .history-button {
+    font-size: 18px;
+  }
+
+  .container {
+    min-height: 700px;
+    margin-bottom: 120px;
+  }
+
+  .profile_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .profile {
+    width: auto;
+  }
+
+  .profile:nth-child(1) {
+    margin-right: 15px;
+  }
+
+  .profile:nth-child(2) {
+    margin-left: 15px;
+  }
+
+  .profile__image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .container {
+    width: 75vw;
+    min-height: 650px;
+  }
+
+  .profile__name {
+    font-size: 22px;
+  }
+
+  .profile__label {
+    font-size: 13px;
+  }
+
+  .profile__parents {
+    font-size: 13px;
+  }
+
+  .social-icons__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .history-button {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+}

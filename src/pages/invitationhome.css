@@ -63,7 +63,7 @@
   justify-content: center;
 }
 
-.invitation_btn_zone img {
+.invitation_indicator {
   width: 30%;
   margin: -10px;
 }
@@ -142,34 +142,52 @@
     padding-bottom: 15px;
   }
 
-  .invitation_btn img {
+  .invitation-icon {
     width: 55px;
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1024px) {
   .welcome_words h1 {
-    font-size: 95px;
+    font-size: 65px;
   }
 
   .welcome_words p {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .welcome_words h4 {
-    font-size: 25px;
+    font-size: 19px;
   }
 
   .invitation_btn {
-    width: 220px;
-    height: 82px;
+    width: 120px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
   }
 
-  .invitation_btn img {
-    width: 75px;
+  .invitation_indicator {
+    width: 220px;
+  }
+
+  .nombre-floreal {
+    width: 55%;
+  }
+
+  .invitation-icon {
+    width: 60px;
+  }
+
+  .divider img {
+    width: 40%;
+  }
+
+  .divider {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
   }
 }

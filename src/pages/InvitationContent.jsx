@@ -29,35 +29,37 @@ const InvitationContent = () => {
           <img src={sectionFirstDivider} />
         </div>
         <WeddingCountdown />
-        <WeddingEventCard
-          icon={WeddingRingsIcon}
-          title="Ceremonia"
-          timeRange="07:00 - 08:00"
-          location="Iglesia Santo Domingo"
-          address="Entre las calles Bernabe Sosa y Tao, una cuadra antes del segundo anillo por la avenida mutualista"
-          backgroundImage={ring}
-        />
-        <div style={{ margin: "30px 0px" }}></div>
-        <WeddingEventCard
-          icon={table}
-          title="Fiesta"
-          timeRange="11:00 - 14:00"
-          location="La Floresta Casa Quinta"
-          address="Sobre la avenida Doble Via la Guardia, Comunidad el Bajío No.21"
-          backgroundImage={DinnerTable}
-        />
+        <div className="wedding-section-wrapper">
+          <WeddingEventCard
+            icon={WeddingRingsIcon}
+            title="Ceremonia"
+            timeRange="07:00 - 08:00"
+            location="Iglesia Santo Domingo"
+            address="Entre las calles Bernabe Sosa y Tao, una cuadra antes del segundo anillo por la avenida mutualista"
+            backgroundImage={ring}
+          />
+          <div className="wedding-card-separator"></div>
+          <WeddingEventCard
+            icon={table}
+            title="Fiesta"
+            timeRange="11:00 - 14:00"
+            location="La Floresta Casa Quinta"
+            address="Sobre la avenida Doble Via la Guardia, Comunidad el Bajío No.21"
+            backgroundImage={DinnerTable}
+          />
+        </div>
         <WeddingMap />
         <div className="divider">
           <img src={sectionDivider} />
         </div>
-        <OurStory />
+        {/*    <OurStory />
         <div className="divider">
           <img src={sectionDivider} />
         </div>
         <Gallery />
         <div className="divider">
           <img src={sectionDivider} />
-        </div>
+        </div> */}
         <DressingCode />
         <div className="divider">
           <img src={sectionDivider} />

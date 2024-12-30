@@ -117,3 +117,20 @@
     margin-bottom: 80px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .title-header {
+    font-size: 22px;
+  }
+  .highlighted-text {
+    font-size: 67px;
+  }
+  .wings-header {
+    width: 500px;
+    top: 38%;
+  }
+  .welcome-text {
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+}

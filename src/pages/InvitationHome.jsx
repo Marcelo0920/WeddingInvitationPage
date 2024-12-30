@@ -53,15 +53,27 @@ const InvitationHome = () => {
       </div>
 
       <div className="invitation_btn_zone">
-        <img src={buttonLeftIndicator} alt="Left indicator" />
+        <img
+          className="invitation_indicator"
+          src={buttonLeftIndicator}
+          alt="Left indicator"
+        />
         <a
           href="/content"
           className="invitation_btn"
           onClick={handleNavigation}
         >
-          <img src={invitationIcon} alt="Invitation" />
+          <img
+            src={invitationIcon}
+            className="invitation-icon"
+            alt="Invitation"
+          />
         </a>
-        <img src={buttonRightIndicator} alt="Right indicator" />
+        <img
+          src={buttonRightIndicator}
+          className="invitation_indicator"
+          alt="Right indicator"
+        />
       </div>
     </div>
   );

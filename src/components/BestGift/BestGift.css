@@ -1,4 +1,3 @@
-/* Base styles for mobile first (357x800) */
 .gift-container {
   padding: 24px;
   max-width: 357px;
@@ -10,7 +9,7 @@
 .gift-title {
   font-size: 25px;
   font-weight: 600;
-  color: #166534; /* emerald-800 */
+  color: #166534;
   margin-bottom: 24px;
   line-height: 1.2;
 }
@@ -18,7 +17,7 @@
 .gift-highlight {
   font-size: 22px;
   line-height: 1.6;
-  color: #64748b; /* slate-500 */
+  color: #64748b;
   font-style: italic;
   margin-bottom: 24px;
   max-width: 320px;
@@ -30,7 +29,7 @@
 .gift-description {
   font-size: 13px;
   line-height: 1.6;
-  color: #94a3b8; /* slate-400 */
+  color: #94a3b8;
   margin-bottom: 32px;
   max-width: 320px;
   margin-left: auto;
@@ -51,7 +50,7 @@
 }
 
 .gift-button {
-  background-color: #627d6c; /* sage green */
+  background-color: #627d6c;
   color: white;
   border: none;
   border-radius: 24px;
@@ -65,7 +64,6 @@
   background-color: #4f6357;
 }
 
-/* Media Queries for different mobile sizes */
 @media screen and (min-width: 481px) {
   .gift-title {
     font-size: 30px;
@@ -110,6 +108,39 @@
   .arrow-icon {
     width: 30px;
     height: 30px;
+  }
+
+  .button-container {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gift-title {
+    font-size: 25px;
+  }
+
+  .gift-container {
+    max-width: 600px;
+  }
+
+  .gift-highlight {
+    font-size: 23px;
+    max-width: 500px;
+  }
+
+  .gift-description {
+    font-size: 14px;
+    max-width: 500px;
+  }
+
+  .gift-button {
+    font-size: 15px;
+  }
+
+  .arrow-icon {
+    width: 25px;
+    height: 25px;
   }
 
   .button-container {
