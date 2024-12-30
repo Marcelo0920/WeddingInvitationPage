@@ -32,14 +32,14 @@
   font-family: "Quicksand", sans-serif;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .polaroid__image {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 
   .polaroid__caption {
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 
@@ -56,11 +56,11 @@
 
 @media screen and (min-width: 1024px) {
   .polaroid__image {
-    width: 120px;
-    height: 140px;
+    width: 100px;
+    height: 120px;
   }
 
   .polaroid__caption {
-    font-size: 12px;
+    font-size: 11px;
   }
 }

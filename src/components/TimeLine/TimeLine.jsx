@@ -13,8 +13,8 @@ const TimeLine = ({ onPhotoClick }) => {
         setViewBox("150 0 300 1350"); // Default viewBox
       } else if (width < 1024) {
         setViewBox("50 0 480 1350"); // Adjusted for tablet
-      } else if (width <= 1440) {
-        setViewBox("-80 0 800 1350"); // Adjusted for desktop
+      } else if (width < 1440) {
+        setViewBox("-120 0 850 1350"); // Adjusted for desktop
       } else {
         setViewBox("0 0 600 1350"); // Adjusted for large screens
       }

@@ -24,27 +24,27 @@
 
 .timeline-item:nth-child(2) {
   right: 20px;
-  top: 660px;
+  top: 650px;
 }
 
 .timeline-item:nth-child(3) {
-  left: 20px;
-  top: 890px;
+  left: 30px;
+  top: 880px;
 }
 
 .timeline-item:nth-child(4) {
   right: 20px;
-  top: 1120px;
+  top: 1090px;
 }
 
 .timeline-item:nth-child(5) {
   left: 20px;
-  top: 1350px;
+  top: 1330px;
 }
 
 .timeline-item:nth-child(6) {
   left: 100px;
-  top: 1620px;
+  top: 1600px;
 }
 
 @media (min-width: 340px) {
@@ -146,7 +146,7 @@
   }
   .timeline-item:nth-child(4) {
     right: 140px;
-    top: 1860px;
+    top: 1840px;
   }
   .timeline-item:nth-child(3) {
     left: 135px;
@@ -154,7 +154,7 @@
   }
   .timeline-item:nth-child(2) {
     right: 110px;
-    top: 1180px;
+    top: 1150px;
   }
   .timeline-item:nth-child(1) {
     left: 100px;
@@ -162,29 +162,56 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .timeline-item:nth-child(6) {
-    left: 400px;
-    top: 2220px;
+    left: 440px;
+    top: 1880px;
   }
   .timeline-item:nth-child(5) {
-    left: 280px;
-    top: 1910px;
+    left: 340px;
+    top: 1580px;
   }
   .timeline-item:nth-child(4) {
-    right: 270px;
-    top: 1640px;
+    right: 320px;
+    top: 1320px;
   }
   .timeline-item:nth-child(3) {
-    left: 245px;
-    top: 1360px;
-  }
-  .timeline-item:nth-child(2) {
-    right: 250px;
+    left: 345px;
     top: 1080px;
   }
+  .timeline-item:nth-child(2) {
+    right: 290px;
+    top: 810px;
+  }
   .timeline-item:nth-child(1) {
-    left: 220px;
-    top: 820px;
+    left: 320px;
+    top: 560px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .timeline-item:nth-child(6) {
+    left: 560px;
+    top: 2255px;
+  }
+  .timeline-item:nth-child(5) {
+    left: 470px;
+    top: 1880px;
+  }
+  .timeline-item:nth-child(4) {
+    right: 440px;
+    top: 1555px;
+  }
+  .timeline-item:nth-child(3) {
+    left: 455px;
+    top: 1260px;
+  }
+  .timeline-item:nth-child(2) {
+    right: 410px;
+    top: 920px;
+  }
+  .timeline-item:nth-child(1) {
+    left: 440px;
+    top: 600px;
   }
 }

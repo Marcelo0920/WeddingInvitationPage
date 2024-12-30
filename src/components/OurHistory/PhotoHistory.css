@@ -134,11 +134,30 @@
 .modal-polaroid:active {
   cursor: grabbing;
 }
+@media screen and (min-width: 320px) {
+  .modal-polaroid-history {
+    max-height: 300px;
+    width: 230px;
+  }
 
-@media screen and (min-width: 481px) {
-  .modal-polaroid {
-    max-height: 600px;
-    width: 350px;
+  .modal-polaroid__caption {
+    margin-top: -13px;
+    font-size: 14px;
+  }
+
+  .modal-polaroid__image {
+    max-height: 500px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-polaroid-history {
+    max-height: 650px;
+    width: 330px;
+  }
+
+  .modal-polaroid__caption {
+    margin-top: -13px;
   }
 
   .modal-polaroid__image {
@@ -147,9 +166,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .modal-polaroid {
+  .modal-polaroid-history {
     max-height: 850px;
-    width: 500px;
+    width: 320px;
   }
 
   .modal-polaroid__image {
